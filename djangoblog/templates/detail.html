@@ -2,6 +2,8 @@
 
 {% block content %}
 <div class ="post-entry">
+    <h1><a href="{% url 'post_edit' post.pk %}">+ EditPost</a></h1>
+    <h1><a href="{% url 'post_delete' post.pk %}">- deletePost</a></h1>
     <h1>{{post.tittle}}</h1>
     <p>{{post.body}}</p>
 </div>

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>hello django</title>
-</head>
-<body>
-<h1>hello world of django</h1>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+{% for post in object_list %}
+<div class="post-entry">
+    <h1><a href="">{{post.tittle}}</a></h1>
+    <p> {{post.body}}</p>
+</div>
+{% endfor%}
+{% endblock content %}

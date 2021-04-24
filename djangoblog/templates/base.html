@@ -15,6 +15,13 @@
         <h1><a href="{% url 'post_new' %}">+ new Blog Post</a></h1>
     </div>
 </header>
+{% if user.is_authenticated %}
+<p>Hi {{ user.username }}!</p>
+<a href="{% url 'logout' %}">Logut</a>
+{% else %}
+<p> you are logged out please login</p>
+<a href="{% url 'login'%}">Login</a>
+{% endif %}
 
 <div>
     {% block content%}

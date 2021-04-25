@@ -9,9 +9,18 @@
 <div>
     {% if user.is_authenticated %}
     <form method="">
-    <h1>please write comments here</h1>
-    <label>email</label>  <input type="email" name="email" placeholder="e:g example@gmail.com">
-    <label>comments</label><textarea cols="20px" rows="20px" name="" placeholder="write to us a comment">comments</textarea>
+        <h1>please write comments here</h1>
+        <table>
+
+            <tr>
+            <td><label>email</label></td>
+            <td><input type="email" name="email" placeholder="e:g example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label>comments</label></td>
+                <td>textarea cols="20px" rows="20px" name="" placeholder="write to us a comment">comments</textarea></td>
+            </tr>
+        </table>
 </form>
     {% endif %}
 </div>

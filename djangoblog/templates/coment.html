@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for post in object_list %}
+<div class="post-entry">
+<form method="">
+    <h1>please write comments here</h1>
+    <label>email</label>  <input type="email" name="email" placeholder="e:g example@gmail.com">
+    <label>comments</label><textarea cols="200" rows="200" name="" placeholder="write to us a comment">comments</textarea>
+
+</form>
+</div>
+{% endfor%}
+{% endblock content %}

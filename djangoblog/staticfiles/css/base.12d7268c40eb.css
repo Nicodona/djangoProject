@@ -1,0 +1,10 @@
+header h1 a{
+color: green;
+}
+.nav-left{
+margin-right: auto;
+}
+.nav-right{
+float: right;
+padding-top:2rem;
+}

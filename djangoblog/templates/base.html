@@ -18,11 +18,11 @@
 {% if user.is_authenticated %}
 <p>Hi {{ user.username }}!</p>
 <a href="{% url 'logout' %}">Logut</a>
+<a href="{% url 'password_change' %}">reset password</a>
 {% else %}
 <p> you are logged out please login</p>
 <a href="{% url 'login'%}">Login</a>
 {% endif %}
-
 <div>
     {% block content%}
     {% endblock content%}
